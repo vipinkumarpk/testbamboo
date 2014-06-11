@@ -1,0 +1,184 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('Bamboo '. $this->translate('Development Application'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge')
+        ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+                        ->prependStylesheet($this->basePath() . '/css/style.css')
+                        ->prependStylesheet('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')
+
+ ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+            ->prependFile('//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js')
+            ->prependFile('//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+            ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+            ->prependFile($this->basePath() . '/js/html5shiv.js',   'text/javascript', array('conditional' => 'lt IE 9',))
+        ; ?>
+
+    </head>
+
+<?php if ($this->getHelperPluginManager()->getServiceLocator()->get('request')->getUri()->getPath() == "/") { ?>
+<body class="home page top-navbar cssAnimate"  loadercolor="#ce0000">
+            
+
+<header id="MainHeader" class="height100 chapter">
+            
+                <div class="parallax height100" id="Parallax" style="background-image: url(/img/home.jpg)">
+                    
+<div class="container"><div class="hero-unit row">
+<div class="logo text-center col-md-12">
+<!-- <img src="/img/logo.png.X"> -->
+</div>
+
+<div class="text-center col-md-12">
+    <h1><span class="light">Better Bamboo's</span></h1>
+</div>
+
+<p class="readmeBox text-center">
+ <a href="#main" class="btn btn-lg  btn-white  btn-scroll" id="" rel="nofollow">Tell Me More!</a>
+</p>
+</div>
+</div>
+
+                </div>
+                 </header>
+<!-- Begin Navigation -->
+<nav id="navigation" class="navbar navbar-default" role="navigation">
+
+<?php } else { ?>
+
+<body class="page top-navbar cssAnimate"  loadercolor="#ce0000">
+
+<!-- Begin Navigation -->
+<nav style="position: fixed; top: 0px;" id="navigation" class="navbar  navbar-default" role="navigation">
+
+<?php } ?>
+        
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+                        <a class="navbar-brand" href="/">Bamboo</a>
+                             </div>
+            <div class="triangle visible-md visible-lg"></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="col-md-4">
+            <p class="white-text">
+                <?php 
+                    if($this->zfcUserIdentity()){
+                        echo "Welcome, ".$this->zfcUserIdentity()->getEmail(); 
+                    }
+                    ?>
+            </p>
+        </div>
+<?php echo $this->mainMenu();?>
+
+
+   </div>
+    <!-- /.navbar-collapse -->
+
+</nav>
+<!-- End Navigation --> 
+
+<div class="container">
+
+</div>
+
+            </div>
+        </nav>
+
+<?php if ($this->getHelperPluginManager()->getServiceLocator()->get('request')->getUri()->getPath() <> "/") { ?>
+<div class="full-width">
+                    
+    <div class="parallax-small" id="Parallax" style="background-image: url(/img/banner2.jpg)">
+        <div class="padding-top-big padding-bottom-medium container">
+            <div class="container text-center">
+                
+    <h3 >
+        All About Bamboo's
+    </h3>
+
+            </div>
+        </div>
+    </div>
+</div>
+<?php } ?>
+
+<div id="main" class="container">
+
+    <?php echo $this->content; ?>
+    <hr>
+
+</div>
+    <footer class="type2 dark-gray-row">
+        <div class="container padding-small">
+            <div class="row">
+                <div class=" col-md-12"><section id="text-2" class="widget-1 widget-first widget widget_text"><div class="widget-inner">            <div class="textwidget"><div class="text-center col-md-12">
+<h5>
+Bamboo</span>
+</h5>
+</div></div>
+        </div></section></div>          </div>
+        </div>
+        <div class="color-row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 pull-right">
+                                            </div>
+                    <div class="col-md-4"><p class="copy">© <?php echo date('Y') ?> Bamboo</p></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+            <a href="#" id="toTop" class="btn-scroll"><i class="fa fa-chevron-up"></i> Back to top</a>
+            <!--footer-->
+
+        <?php echo $this->inlineScript() ?>
+
+<script type='text/javascript' src='/js/jquery.sticky.js'></script>
+<script type='text/javascript' src='/js/jquery.pagescroller.lite.js'></script>
+<script type='text/javascript' src='/js/topojson.v1.min.js'></script>
+<script type='text/javascript' src='/js/device.min.js'></script>
+<script type='text/javascript' src='/js/main.js'></script>
+<script type='text/javascript' src='/js/jquery.parallax.js'></script>
+<script type="text/javascript">
+
+
+    jQuery(window).load(function () {
+        "use strict";
+        if (!device.mobile() && !device.tablet()) {
+            jQuery("#Parallax").parallax("50%", 0.4);
+        }
+    });
+    jQuery(window).resize(function () {
+        if (!device.mobile() && !device.tablet()) {
+            setTimeout(function () {
+                jQuery("#Parallax").parallax("20%", 0.4, true);
+            }, 500);
+        }
+    });
+</script>        
+    </body>
+</html>
+<?php if(isset($flashMessages)) : ?>
+<ul class="flash-messages">
+    <?php foreach ($flashMessages as $flashMessage) : ?>
+    <li><?php echo $flashMessage; ?></li>
+    <?php endforeach; ?> 
+</ul>
+<?php endif; ?>

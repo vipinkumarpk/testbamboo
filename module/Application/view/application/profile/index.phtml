@@ -1,0 +1,57 @@
+<h5>Profile Listing</h5>
+<a href="<?php echo $this->url('application/default', array('controller' => 'profile', 'action' => 'add')); ?>">Add a new profile</a>
+
+<?php
+$flash = $this->flashMessenger();
+$flash->setMessageOpenFormat('<div%s>
+<button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+    &times;
+</button>
+<div>')->setMessageCloseString('</div></div>');
+
+echo $flash->render('error', array('alert', 'alert-dismissable', 'alert-danger'));
+echo $flash->render('info', array('alert', 'alert-dismissable', 'alert-info'));
+echo $flash->render('default', array('alert', 'alert-dismissable', 'alert-warning'));
+echo $flash->render('success', array('alert', 'alert-dismissable', 'alert-success'));
+?>
+
+<table class="table table-striped table-hover" >
+
+<tr>
+	<th>Sl.No</th>
+	<th>Name</th>
+	<th>View</th>
+	<th>Edit</th>
+	<th>Delete</th>
+</tr>
+<tbody>
+
+<?php
+
+	$sl =0;
+	foreach ($paginator as $row) {
+		$sl++;
+?>
+		<tr>
+			<td ><?php echo $sl; ?></td>
+			<td >
+				<?php echo $this->escapeHtml($row->getFirstname());?> 
+				<?php echo $this->escapeHtml($row->getMiddlename()); ?>
+				<?php echo $this->escapeHtml($row->getLastname()); ?>
+			</td>			
+
+			<td><a href="<?php echo $this->url('application/default', array('controller' => 'profile', 'action' => 'view', 'id' => $row->getId())); ?>">View</a></td>
+			<td><a href="<?php echo $this->url('application/default', array('controller' => 'profile', 'action' => 'edit', 'id' => $row->getId())); ?>">Edit</a></td>
+			<td><a href="<?php echo $this->url('application/default', array('controller' => 'profile', 'action' => 'delete', 'id' => $row->getId()));?>" onclick="return confirm('Do you rely want to delete the record?')">Delete</a></td>
+		</tr>
+<?php
+	}
+?>
+</tbody>
+</table>
+
+<?php 
+echo $this->paginationControl($this->paginator,
+                                    'Sliding', // All, Elastic, Jumping, Sliding
+                                   'paginator.phtml', array('route' => 'application/paginator', 'mycontroller' => 'profile')); ?>
+

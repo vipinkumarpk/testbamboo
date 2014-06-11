@@ -1,0 +1,207 @@
+<optgroup label="AGRI BUSINESS">
+ <option value="1030947">Dairy</option>
+ <option value="1030948">Farming</option>
+ <option value="1030949">Fishery</option>
+ <option value="1030920">Food Production</option>
+ <option value="1030950">Ranching</option>
+</optgroup>
+<optgroup label="BUSINESS SERVICES">
+ <option value="1030951">Business Supplies & Equipment</option>
+ <option value="1030952">Event Services</option>
+ <option value="1030953">Facilities Services</option>
+ <option value="1030954">Information Services</option>
+ <option value="1030955">Outsourcing / Off Shoring</option>
+ <option value="1030938">Printing</option>
+ <option value="1030956">Professional Training & Coaching</option>
+ <option value="1030957">Program Development</option>
+ <option value="1030930">Public Relations</option>
+ <option value="1030958">Research</option>
+ <option value="1030959">Security & Investigations</option>
+ <option value="1030923">Shared Services</option>
+ <option value="1030960">Staffing & Recruitment</option>
+ <option value="1030961">Translation & Localisation</option>
+</optgroup>
+<optgroup label="EDUCATION">
+ <option value="1030962">Educational Management</option>
+ <option value="1030963">E-Learning</option>
+ <option value="1030964">Higher Education</option>
+ <option value="1030880">Primary / Secondary Education</option>
+</optgroup>
+<optgroup label="ENERGY & UTILITIES">
+ <option value="1030965">Environment Services</option>
+ <option value="1030903">Mining & Metals</option>
+ <option value="1030897">Oil & Energy</option>
+ <option value="1030904">Renewable & Environmental</option>
+ <option value="1030899">Utilities</option>
+</optgroup>
+<optgroup label="FMCG">
+ <option value="1030966">Consumer Electronics</option>
+ <option value="1030914">Consumer Goods</option>
+ <option value="1030967">Cosmetics</option>
+ <option value="1030968">Food & Beverage</option>
+ <option value="1030969">Tobacco</option>
+ <option value="1030970">Wine & Spirits</option>
+</optgroup>
+<optgroup label="FS & BANKING">
+ <option value="1030885">Broking</option>
+ <option value="1030909">Capital Markets</option>
+ <option value="1030931">Commodity Trader</option>
+ <option value="1030905">Corporate / Retail Banking</option>
+ <option value="1030929">Custody / Fund Services</option>
+ <option value="1030928">Financial Services</option>
+ <option value="1030915">General Insurance</option>
+ <option value="1030917">Hedge Funds</option>
+ <option value="1030894">Insurance</option>
+ <option value="1030971">Insurance Broking</option>
+ <option value="1030902">Investment Banking / Venture</option>
+ <option value="1030890">Investment Management</option>
+ <option value="1030972">Life and Pensions</option>
+ <option value="1030973">Lloyds of London</option>
+ <option value="1030910">Venture Capital & Private Equity</option>
+</optgroup>
+<optgroup label="HEALTH SERVICES">
+ <option value="1030974">Alternative Medicine</option>
+ <option value="1030975">Health Wellness & Fitness</option>
+ <option value="1030892">Hospitals & Healthcare</option>
+ <option value="1030976">Individual & Family Services</option>
+ <option value="1030977">Medical Practice</option>
+ <option value="1030978">Mental Healthcare</option>
+ <option value="1030979">Veterinary</option>
+</optgroup>
+<optgroup label="HEAVY MANUFACTURING">
+ <option value="1030896">Aerospace</option>
+ <option value="1030879">Automotive</option>
+ <option value="1030980">Industrial Automation</option>
+ <option value="1030981">Industrial Automotives</option>
+ <option value="1030982">Machinery</option>
+ <option value="1030889">Mechanical or Industrial Engineering</option>
+ <option value="1030881">Paper & Forest Products</option>
+ <option value="1030983">Railroad Manufacture</option>
+ <option value="1030984">Ship Building</option>
+</optgroup>
+<optgroup label="LEISURE, ENTERTAINMENT, TRAVEL, TOURISM">
+ <option value="1030985">Airlines / Aviation</option>
+ <option value="1030986">Animation</option>
+ <option value="1030987">Entertainment</option>
+ <option value="1030988">Facilities & Services</option>
+ <option value="1030926">Gambling & Casinos</option>
+ <option value="1030989">Hospitality</option>
+ <option value="1030916">Leisure Travel & Tourism</option>
+ <option value="1030990">Motion Pictures & Films</option>
+ <option value="1030991">Recreational</option>
+ <option value="1030992">Restaurants</option>
+ <option value="1030993">Sports</option>
+</optgroup>
+<optgroup label="LIGHT MANUFACTURING">
+ <option value="1030994">Chemicals</option>
+ <option value="1030900">Electrical / Electronic Manufacturing</option>
+ <option value="1030995">Plastics</option>
+ <option value="1030996">Semiconductors</option>
+ <option value="1030898">Textiles</option>
+</optgroup>
+<optgroup label="MEDIA">
+ <option value="1030891">Broadcast Media</option>
+ <option value="1030997">Design</option>
+ <option value="1030998">Graphic Design</option>
+ <option value="1030999">Market Research</option>
+ <option value="1030887">Marketing & Advertising</option>
+ <option value="1031000">Media Production</option>
+ <option value="1031001">Music</option>
+ <option value="1031002">Newspapers</option>
+ <option value="1031003">Online Media</option>
+ <option value="1031004">Photography</option>
+ <option value="1030893">Publishing</option>
+ <option value="1031005">Writing & Editing</option>
+</optgroup>
+<optgroup label="NOT FOR PROFIT">
+ <option value="1031006">Consumer Services</option>
+ <option value="1031007">Fund-Raising</option>
+ <option value="1031008">Libraries</option>
+ <option value="1031009">Museums & Institutions</option>
+ <option value="1030925">Nonprofit Organisation</option>
+ <option value="1031010">Philanthropy</option>
+ <option value="1031011">Religious Institutions</option>
+</optgroup>
+<optgroup label="PHARMA, SCIENCE AND DEVICES">
+ <option value="1031012">Biotechnology</option>
+ <option value="1030911">Medical Devices</option>
+ <option value="1031013">Nanotechnology</option>
+ <option value="1030886">Pharmaceuticals</option>
+</optgroup>
+<optgroup label="PROFESSIONAL SERVICES">
+ <option value="1030940">Accounting 20+ Partners</option>
+ <option value="1030941">Accounting 5-20 Partners</option>
+ <option value="1030933">Accounting Practice Big 4</option>
+ <option value="1030942">Accounting Under 5 Partners</option>
+ <option value="1031014">Alternative Dispute Resolution</option>
+ <option value="1031015">Human Resources</option>
+ <option value="1031016">Legal 20+ Partners</option>
+ <option value="1030943">Legal 5-20 Partners</option>
+ <option value="1030936">Legal Big 5</option>
+ <option value="1031017">Legal Services</option>
+ <option value="1030937">Legal Under 5 Partners</option>
+ <option value="1031018">Legislative Office</option>
+ <option value="1031019">Management Consulting</option>
+</optgroup>
+<optgroup label="PROPERTY & CONSTRUCTION">
+ <option value="1030912">Architects</option>
+ <option value="1031020">Building Materials</option>
+ <option value="1030921">Civil Engineering</option>
+ <option value="1031021">Commercial Real Estate</option>
+ <option value="1030888">Construction</option>
+ <option value="1031022">Glass Ceramic & Concrete</option>
+ <option value="1030907">Real Estate</option>
+ <option value="1031874">Interior Fit Out</option>
+</optgroup>
+<optgroup label="PUBLIC SECTOR">
+ <option value="1030906">Civil & Social Organisation</option>
+ <option value="1031023">Defence & Space</option>
+ <option value="1031024">Executive Office</option>
+ <option value="1030913">Government Administration</option>
+ <option value="1031025">Government Relations</option>
+ <option value="1031026">International Affairs</option>
+ <option value="1031027">International Trade and Development</option>
+ <option value="1031028">Judiciary</option>
+ <option value="1030908">Law Enforcement</option>
+ <option value="1031029">Military</option>
+ <option value="1031030">Political Organisation</option>
+ <option value="1031031">Public Policy</option>
+ <option value="1030919">Public Safety</option>
+ <option value="1031032">Think Tank</option>
+</optgroup>
+<optgroup label="RETAIL">
+ <option value="1031033">Apparel & Fashion</option>
+ <option value="1031034">Arts & Crafts</option>
+ <option value="1031035">Fine Art</option>
+ <option value="1031036">Furniture</option>
+ <option value="1031037">Luxury Goods & Jewellery</option>
+ <option value="1030882">Retail</option>
+ <option value="1031038">Sporting Goods</option>
+ <option value="1031039">Supermarkets</option>
+ <option value="1031040">Wholesale</option>
+</optgroup>
+<optgroup label="TA / Recruitment">
+ <option value="1031041">Recruitment Consultancy</option>
+</optgroup>
+<optgroup label="TECHNOLOGY">
+ <option value="1031042">Computer & Network Security</option>
+ <option value="1031043">Computer Games</option>
+ <option value="1030918">Computer Hardware</option>
+ <option value="1031044">Computer Networking</option>
+ <option value="1030924">Computer Software</option>
+ <option value="1030935">Information Technology & Services</option>
+ <option value="1030934">Internet</option>
+</optgroup>
+<optgroup label="TELECOMMUNICATIONS">
+ <option value="1030883">Telecommunications</option>
+ <option value="1031045">Wireless</option>
+</optgroup>
+<optgroup label="TRANSPORT & LOGISTICS">
+ <option value="1031046">Airlines / Aviation</option>
+ <option value="1031047">Logistics & Supply Chain</option>
+ <option value="1030895">Maritime</option>
+ <option value="1031048">Package / Freight Delivery</option>
+ <option value="1031049">Packaging and Containers</option>
+ <option value="1030927">Transportation / Trucking / Railroad</option>
+ <option value="1030932">Warehousing</option>
+</optgroup>

@@ -1,0 +1,25 @@
+<div>
+	<a href="<?php echo $this->url('application/default', array('controller' => 'profile', 'action' => 'edit', 'id' => $profile->getId())); ?>">Edit <?=$this->profile->getFirstname();?>'s Profile Record</a>
+
+	<h5><?=$this->profile->getFirstname();?> <?=$this->profile->getLastname();?></h5>
+	
+	<table class="table table-striped ">
+		<tr>
+			<td>First Name</td>
+			<td><?=$this->profile->getFirstname();?></td>
+		</tr>
+		<tr>
+			<td>Last Name</td>
+			<td><?=$this->profile->getLastname();?></td>
+		</tr>
+		<tr>
+			<td>Address1</td>
+			<td><?=$this->profile->getAddress1();?></td>
+		</tr>
+		<tr>
+			<td>Address2</td>
+			<td><?=$this->profile->getAddress2();?></td>
+		</tr>
+	</table>
+
+</div>
